@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: auth
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5433/yourdbname
+    username: postgres
+    password: postgres
+  security:
+    jwt:
+      secret: your-secret-key
+
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
